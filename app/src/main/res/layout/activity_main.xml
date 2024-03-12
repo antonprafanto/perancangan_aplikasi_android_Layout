@@ -1,49 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainTableLayout"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <!-- Baris 1 -->
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nama:"
-            android:paddingRight="8dp"/>
-        <EditText
-            android:id="@+id/editTextNama"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Masukkan Nama"/>
-    </TableRow>
+    <!-- ImageView untuk menampilkan gambar -->
+    <ImageView
+        android:layout_width="259dp"
+        android:layout_height="259dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@color/material_dynamic_neutral_variant20"/>
 
-    <!-- Baris 2 -->
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Usia:"
-            android:paddingRight="8dp"/>
-        <EditText
-            android:id="@+id/editTextUsia"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Masukkan Usia"/>
-    </TableRow>
+    <!-- Button untuk aksi klik -->
+    <Button
+        android:id="@+id/tombolButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Klik Saya" />
 
-    <!-- Baris 3 -->
-    <TableRow>
-        <Button
-            android:id="@+id/buttonSubmit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Submit"/>
-    </TableRow>
-
-</TableLayout>
+</FrameLayout>
